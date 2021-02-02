@@ -4,40 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>BizNet</title>
+    <title>Tailwind Site</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Inside container</h1>
+    <!-- navbar component -->
+    <nav
+      class="bg-white border border-b border-gray-300 flex justify-start p-4 space-y-3"
+    >
+      <img
+        src="https://cdn2.iconfinder.com/data/icons/icontober/64/Inkcontober_Trail-512.png"
+        alt="logo"
+        class="h-12 w-12"
+      />
+      <a href="#!" class="text-gray-500 mx-3">Home</a>
+      <a href="#!" class="text-gray-500 mx-3">About</a>
+    </nav>
 
-      <!-- GRID -->
-      <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-3 lg-grid-cols-4 lg:grid-cols-6">
-        <div class="bg-purple-500 text-white rounded-xl p-3 shadow-2xl">Shaan Alam</div>
-        <div class="bg-pink-500 text-white rounded-xl p-3 shadow-2xl">Shaan Alam</div>
-        <div class="bg-indigo-500 text-white rounded-xl p-3 shadow-2xl">Shaan Alam</div>
-        <div class="bg-blue-500 text-white rounded-xl p-3 shadow-2xl">Shaan Alam</div>
-        <div class="bg-green-500 text-white rounded-xl p-3 shadow-2xl">Shaan Alam</div>
-        <div class="bg-yellow-500 text-white rounded-xl p-3 shadow-2xl">Shaan Alam</div>
-      </div>
-
-      <div class="my-4 py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
-        <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="./img/logo.jpeg" alt="Woman's Face">
-        <div class="text-center space-y-2 sm:text-left">
-          <div class="space-y-0.5">
-            <p class="text-lg text-black font-semibold">
-              Erin Lindford
-            </p>
-            <p class="text-gray-500 font-medium">
-              Product Engineer
-            </p>
-          </div>
-          <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-1 focus:ring-purple-600 focus:ring-offset-2">Message</button>
+    <!-- Hero component -->
+    <div class="md:flex justify-between py-24 px-10">
+      <div class="flex-1">
+        <h4 class="text-gray-500 text-center md:text-left ">Welcome to</h4>
+        <h1 class="text-3xl text-black text-center md:text-left text-4xl md:text-7xl font-black">Doggo City</h1>
+        <div class="buttons my-6 md:text-left text-center sm:text-left">
+          <button
+            class="m-0 w-full xsm:w-auto bg-purple-600 px-4 py-3 text-white font-bold shadow-2xl rounded-lg hover:bg-purple-700 transition-all"
+          >
+          Learn more
+          <button
+            class="my-2 xsm:my-2 w-full xsm:w-auto bg-white text-purple-600 xsm:mx-2 border-2 border-purple-600 px-4 py-3 font-bold shadow-2xl rounded-lg hover:bg-purple-700 hover:text-white transition-all"
+          >
+            Learn more
+          </button>
         </div>
       </div>
-
-      <div class="my-4 py-8 px-8 max-w-sm.mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-cente">
-
+      <div class="flex-1 flex h-full justify-center md:justify-end">
+        <img
+          src="https://images.unsplash.com/photo-1536012441472-aae6b3ce330f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+          alt="Doggy"
+          class="rounded shadow-2xl w-3/4 self-center"
+        />
       </div>
-
     </div>
+  </body>
 </html>
